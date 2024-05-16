@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin : 0;
+}
+
+body {
+    max-width: 425px;
+    /* width: 390px; */
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-color: black;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+
+    .header_username {
+        width: 58%;
+        display: flex;
+        justify-content: flex-end;
+        /* flex-direction: column; */
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        /* margin-right: 20px; */
+        i {
+            font-size: 22px;
+        }
+        .fa-ellipsis  {
+            
+            margin-left: 30px;
+        }
+    }
+    h1 {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .fa-circle-check {
+        color: #1FA1FF;
+    }
+}
+
+.user_header {
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100px;
+
+    .user_header-profil_icon {
+        width: 90px;
+        height: 90px;
+
+        background-color: white;
+        overflow: hidden;
+
+        border-radius: 100%;
+    }
+
+    .user_header-info {
+        width: 60%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .user_header-info-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.user_info {
+    font-size: 13px;
+    margin: 15px 15px;
+    .user_info-username {
+        font-weight: 100;
+        font-size: 14px;
+    }
+    .user_info-category {
+        color: rgba(255, 255, 255, 0.478);
+    }
+    .tag {
+        color: #004C8B;
+    }
+    
+    .user_info-link, a {
+        color: #1FA1FF;
+        text-decoration: none;
+    }
+
+    .user_info-follow_button {
+        margin: 10px 0;
+
+        background-color: #1FA1FF ; 
+        color: white;
+
+        border: none;
+        border-radius: 2px;
+
+        width: 100%;
+        height: 32px;
+    }
+}
+
+.user_photo_grid {
+    margin: 5px;
+    background-color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+
+    .grid-img {
+        width: 136px;
+        height: 136px;
+    }
+}
+
+footer {
+    height: 60px;
+    font-size: 24px;
+    position: sticky;
+    background-color: black;
+    bottom: 0;
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+        height: 100%;
+        width: 100%;
+    }
+    
+    a {
+        color: white;
+    }
+
+    .fa-house {
+        width: 40%;
+    }
+
+    .mini_user_icon {
+        width: 24px;
+        height: 24px;
+        background-color: 24px;
+        border-radius: 100%;
+    }
+}
